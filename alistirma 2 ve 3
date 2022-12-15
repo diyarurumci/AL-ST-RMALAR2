@@ -1,0 +1,23 @@
+##alistirma 2 
+def toplam (n):
+    if n == 0 :
+        return 0
+    elif n < 0 :
+        return "pozitif br sayı yazın"
+    else:
+        return n + toplam(n-1)
+    
+    
+    
+i = int(input("pozitif bir sayı giriniz : "))
+print(f"1 den {i}'ye kadar olan sayıların toplamı = {toplam(i)}")  
+
+##alistirma 3
+def faktoriyel(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * faktoriyel(n - 1)
+    
+    
+print(faktoriyel(int(input("faktoriyelini almak istediğiniz sayıyı giriniz : "))))
