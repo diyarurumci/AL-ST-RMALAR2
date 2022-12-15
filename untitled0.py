@@ -1,7 +1,13 @@
 import random
 a = 0
-sayi = random.randint(10,99)
-print(sayi)
+b = 0
+while b == 0:
+     sayi = random.randint(10,99)
+     print(sayi)
+     if sayi == str(sayi)[::-1]:
+         continue
+     else:
+         b += 1
 
  
 while a == 0 :
@@ -22,13 +28,12 @@ while a == 0 :
              dogruyer_sayac += 1 
          else:
              yanlısyersayac -= 1
-             print("doğruyer sayacı:",dogruyer_sayac)
-             print("yanlış yer sayacı :",yanlısyersayac)
+    print("doğruyer sayacı:",dogruyer_sayac)
+     
+    print("yanlış yer sayacı :",yanlısyersayac)        
     if dogruyer_sayac == 2 :
         print("tebrikler dopru sayıyı buldunuz")
         break
-             
-            
     
         
 
