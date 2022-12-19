@@ -1,0 +1,24 @@
+
+def ikiara2(liste,arasayi):
+    bas = 0
+    son = len(liste) -1
+    bul = False
+    while bas <= son and not bul:
+        orta =(bas + son) //2
+        if liste[orta] > arasayi:
+            son = orta - 1
+        elif liste[orta] < arasayi:
+           bas = orta + 1
+        else:
+            bul = True
+            
+    return bul
+
+numara = int(input("bulmak istediğiniz sayıyı giriniz  : "  ))
+bulundumu = ikiara2(lie, numara)
+if bulundumu == True:
+    print(f" {numara} sayısı listede bulunmuştur")
+else:
+    print(f" {numara} listede bulunamamıştır")      
+    
+                
